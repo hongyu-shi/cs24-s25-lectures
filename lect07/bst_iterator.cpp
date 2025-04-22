@@ -8,6 +8,10 @@ bst::iterator bst::begin(){
     return it;
 }
 
+bst::iterator bst::end(){
+    return iterator(nullptr, this);
+}
+
 bst::Node* bst::getmin(Node* r) const{
     if(!r) return nullptr;
     while(r && r->left){

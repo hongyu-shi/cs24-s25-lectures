@@ -21,6 +21,7 @@ public:
     void erase(int value);
     friend bst* create_small_bst();
     iterator begin();
+    iterator end();
 
 private:
     struct Node{

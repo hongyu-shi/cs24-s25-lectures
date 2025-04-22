@@ -20,6 +20,7 @@ public:
     void clear();
     void erase(int value);
     friend bst* create_small_bst();
+    iterator begin();
 
 private:
     struct Node{
